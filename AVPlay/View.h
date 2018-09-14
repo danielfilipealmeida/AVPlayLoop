@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  View.h
 //  AVPlay
 //
 //  Created by Daniel Almeida on 14/09/18.
@@ -10,13 +10,10 @@
 #import <AVFoundation/AVFoundation.h>
 #import <AVFoundation/AVPlayer.h>
 
-
-@interface AppDelegate : NSObject <NSApplicationDelegate> {
-    AVPlayer *player;
-    
-    NSString *videoPath;
+@interface View : NSView {
+    AVPlayerLayer *playerLayer;
 }
 
+- (void) setPlayer: (AVPlayer *) player;
 
 @end
-
