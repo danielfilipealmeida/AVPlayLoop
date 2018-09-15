@@ -11,6 +11,9 @@
 		653F58CB214BF53300A0EA41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 653F58CA214BF53300A0EA41 /* main.m */; };
 		653F58CD214BF53300A0EA41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653F58CC214BF53300A0EA41 /* Assets.xcassets */; };
 		653F58D0214BF53300A0EA41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 653F58CE214BF53300A0EA41 /* MainMenu.xib */; };
+		653F58D9214BF58A00A0EA41 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653F58D8214BF58A00A0EA41 /* AVFoundation.framework */; };
+		653F58DC214BFC5700A0EA41 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 653F58DB214BFC5700A0EA41 /* video.mp4 */; };
+		65E2C9C7214C30530035AD16 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E2C9C6214C30530035AD16 /* PlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,11 @@
 		653F58CC214BF53300A0EA41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		653F58CF214BF53300A0EA41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		653F58D1214BF53300A0EA41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		653F58D8214BF58A00A0EA41 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		653F58DB214BFC5700A0EA41 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
+		65E2C9C5214C30530035AD16 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		65E2C9C6214C30530035AD16 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
+		65E2C9C8214C47D00035AD16 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				653F58D9214BF58A00A0EA41 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +48,7 @@
 			children = (
 				653F58C5214BF53300A0EA41 /* AVPlay */,
 				653F58C4214BF53300A0EA41 /* Products */,
+				653F58D7214BF58A00A0EA41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,12 +63,16 @@
 		653F58C5214BF53300A0EA41 /* AVPlay */ = {
 			isa = PBXGroup;
 			children = (
+				653F58DB214BFC5700A0EA41 /* video.mp4 */,
 				653F58C6214BF53300A0EA41 /* AppDelegate.h */,
 				653F58C7214BF53300A0EA41 /* AppDelegate.m */,
 				653F58CC214BF53300A0EA41 /* Assets.xcassets */,
 				653F58CE214BF53300A0EA41 /* MainMenu.xib */,
 				653F58D1214BF53300A0EA41 /* Info.plist */,
 				653F58C9214BF53300A0EA41 /* Supporting Files */,
+				65E2C9C5214C30530035AD16 /* PlayerViewController.h */,
+				65E2C9C6214C30530035AD16 /* PlayerViewController.m */,
+				65E2C9C8214C47D00035AD16 /* README.md */,
 			);
 			path = AVPlay;
 			sourceTree = "<group>";
@@ -69,6 +83,14 @@
 				653F58CA214BF53300A0EA41 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		653F58D7214BF58A00A0EA41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				653F58D8214BF58A00A0EA41 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,6 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				653F58CD214BF53300A0EA41 /* Assets.xcassets in Resources */,
+				653F58DC214BFC5700A0EA41 /* video.mp4 in Resources */,
 				653F58D0214BF53300A0EA41 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +165,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				653F58CB214BF53300A0EA41 /* main.m in Sources */,
+				65E2C9C7214C30530035AD16 /* PlayerViewController.m in Sources */,
 				653F58C8214BF53300A0EA41 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +314,7 @@
 				653F58D6214BF53300A0EA41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
