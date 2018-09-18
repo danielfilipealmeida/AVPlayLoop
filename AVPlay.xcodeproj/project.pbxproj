@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		650C609E21519ED60004EC43 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 650C609D21519ED60004EC43 /* video.mp4 */; };
 		653F58C8214BF53300A0EA41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 653F58C7214BF53300A0EA41 /* AppDelegate.m */; };
 		653F58CB214BF53300A0EA41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 653F58CA214BF53300A0EA41 /* main.m */; };
 		653F58CD214BF53300A0EA41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 653F58CC214BF53300A0EA41 /* Assets.xcassets */; };
 		653F58D0214BF53300A0EA41 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 653F58CE214BF53300A0EA41 /* MainMenu.xib */; };
 		653F58D9214BF58A00A0EA41 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 653F58D8214BF58A00A0EA41 /* AVFoundation.framework */; };
-		653F58DC214BFC5700A0EA41 /* video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 653F58DB214BFC5700A0EA41 /* video.mp4 */; };
 		65E2C9C7214C30530035AD16 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 65E2C9C6214C30530035AD16 /* PlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		650C609D21519ED60004EC43 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = video.mp4; path = AVPlay/video.mp4; sourceTree = "<group>"; };
 		653F58C3214BF53300A0EA41 /* AVPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		653F58C6214BF53300A0EA41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		653F58C7214BF53300A0EA41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		653F58CF214BF53300A0EA41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		653F58D1214BF53300A0EA41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		653F58D8214BF58A00A0EA41 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		653F58DB214BFC5700A0EA41 /* video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.mp4; sourceTree = "<group>"; };
 		65E2C9C5214C30530035AD16 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		65E2C9C6214C30530035AD16 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		65E2C9C8214C47D00035AD16 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
@@ -46,6 +46,7 @@
 		653F58BA214BF53200A0EA41 = {
 			isa = PBXGroup;
 			children = (
+				650C609D21519ED60004EC43 /* video.mp4 */,
 				653F58C5214BF53300A0EA41 /* AVPlay */,
 				653F58C4214BF53300A0EA41 /* Products */,
 				653F58D7214BF58A00A0EA41 /* Frameworks */,
@@ -63,7 +64,6 @@
 		653F58C5214BF53300A0EA41 /* AVPlay */ = {
 			isa = PBXGroup;
 			children = (
-				653F58DB214BFC5700A0EA41 /* video.mp4 */,
 				653F58C6214BF53300A0EA41 /* AppDelegate.h */,
 				653F58C7214BF53300A0EA41 /* AppDelegate.m */,
 				653F58CC214BF53300A0EA41 /* Assets.xcassets */,
@@ -152,8 +152,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				653F58CD214BF53300A0EA41 /* Assets.xcassets in Resources */,
-				653F58DC214BFC5700A0EA41 /* video.mp4 in Resources */,
 				653F58D0214BF53300A0EA41 /* MainMenu.xib in Resources */,
+				650C609E21519ED60004EC43 /* video.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

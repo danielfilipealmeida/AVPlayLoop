@@ -46,9 +46,9 @@
     self.view.layer.backgroundColor = CGColorCreate(CGColorSpaceCreateDeviceRGB(),components);
 }
 
-- (AVPlayer *) newPlayerForURL: (NSURL*) url
+- (AVPlayer *) newPlayerForURL: (NSURL*) _url
 {
-    AVPlayer* newPlayer = [AVPlayer playerWithURL: url];
+    AVPlayer* newPlayer = [AVPlayer playerWithURL: _url];
     [newPlayer setMuted:YES];
     
     return newPlayer;
